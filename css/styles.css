@@ -1,16 +1,72 @@
-html {
-    font-size: 62.5%;
+:root{ /*"clase" donden definimos colores a usar (opcional pero recomendado)*/
+    --blanco: #ffffff;
+    --obscuro: #000000; 
+    --primario: #ffc107;
+    --secundario: #0097a7;
+    --gris: #757575;
+
+}
+
+html{
+    font-size: 62,5%;  /*conversion para web*/
+    font-family: Krub,Arial, Helvetica, sans-serif;
 }
 body{
-    font-size: 16px;
+    font-size: 16px; /*el navegador tiene por defecto 16px en texto*/
 }
-
 .title{
-
     text-align: center;
-    font-size: 3.8rem;
+    font-size: 3.8rem; /*root em 1rem=16px | 3.8 *16*/
+}
+.title span
+{
+    font-size: 2rem;
 }
 
-.title span {
+/*barra de navegacion*/
+.contenedor{
+    max-width: 120rem;
+    /*margin-top: 0;
+      margin-right: auto;
+      margin-bottom: 0;
+      margin-left: auto
+    */
+    margin: 0 auto;
+}
+.nav-bg{
+    background-color: var(--secundario);
+}
+
+.nave-principal a{
+    background-color: var(--secundario);
+    color: var(--blanco);
+    /*quitar subrayado*/
+    text-decoration: none;
+    padding: 1rem;
+}
+
+.nave-principal{
+    /*relleno, margen por dentro*/
+    /*padding: 1rem;*/
+    display: flex;/**/
+    flex-direction: column;
+    align-items: center;
+    /*justify-content para filas
+      alingn-items para columnas*/
+    /*justify-content: space-between;*/
     font-size: 2rem;
+    font-weight: bold;
+}
+
+/*diseño responsive*/
+@media (min-width: 768px){ /*si tiene almenos 768px (tablet) */
+    .nave-principal{
+        flex-direction: row; 
+        justify-content: space-between;
+    }
+}
+
+.nave-principal a:hover{ /*efecto mouse sobre elemento*/
+    background-color: var(--primario);
+    color: var(--obscuro);
 }
