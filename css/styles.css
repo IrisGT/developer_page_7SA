@@ -70,3 +70,9 @@ body{
     background-color: var(--primario);
     color: var(--obscuro);
 }
+.hero{
+    /*../ es para regresar a una carpeta*/
+    background-image: url('../img/hero.jpg');
+    background-repeat: no-repeat;
+    background-size: cover; /*cover subre la imagen con todo el tamaño*/
+}
