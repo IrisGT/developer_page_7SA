@@ -78,41 +78,45 @@
         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis aliquam cum vitae! Debitis nemo natus nam cupiditate in vero? Non fuga sed earum harum! Perspiciatis consequuntur laboriosam nihil architecto voluptatibus?</p>
         </section>
         </div> <!--Cierre de mi div.servicios-->
-    </main>
 
     <section>
         <h2>Contacto</h2>
-        <form>
+        <form class="formulario">
             <fieldset>
                 <legend> Llena tus datos para establecer Contacto</legend>
-                <div>
+                <div class="contenedor-campos">
+                <div class="campo">
                     <label>Nombre</label>
                     <input type="text" placeholder="Nombre">
                 </div>
-                <div>
+                <div class="campo">
                     <label>Telefono</label>
                     <input type="tel" placeholder="Telefono">
                 </div>
-                <div>
+                <div class="campo">
                     <label>Correo</label>
                     <input type="email" placeholder="Email">
                 </div>
-                <div>
+                <div class="campo">
                     <label>Mensaje</label>
                     <textarea></textarea>
                 </div>
-                <div>
-                    <input type="submit" value="Enviar">
+            </div> <!--Cierre div contendor-campos -->
+                <div class="alinear-derecha flex">
+                    <input class="boton w-sm-100" type="submit" value="Enviar">
                 </div>
 
-            </fieldset>
+                </fieldset>
 
-        </form>
-    </section>
+            </form>
+        </section>
+    </main>
 
-    <footer>
-        <p>Todos los derechos reservados © Iris Garcia Developer</p>
-    </footer>   
+    <div class="pie">
+        <footer>
+            <p>Todos los derechos reservados © Iris Garcia Developer</p>
+        </footer>  
+    </div> 
 
 </body>
 </html>
